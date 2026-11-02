@@ -25,15 +25,18 @@ Every player starts with 5 "virtual legs" at the basement's average. A newcomer 
 
 ## Getting it onto the tablet
 
-The camera and offline mode only work over **HTTPS** (or on `localhost`). So the files have to be served once from an HTTPS address. After that the app runs offline.
+**Live address: https://barbossa94.github.io/keller-darts/**
 
-1. Put the `basement-darts` folder on any free static host, for example GitHub Pages, Netlify Drop or Cloudflare Pages. Only the app code is uploaded. Players, photos and games never leave the tablet.
-2. Open the address on the tablet:
+The app is hosted on GitHub Pages (repo `barbossa94/keller-darts`, branch `main`). Only the app code is there. Players, photos and games never leave the device: every phone or tablet keeps its own data. The camera and offline mode need HTTPS, which Pages provides. After the first visit the app runs offline.
+
+To publish a change: commit and push to `main`, wait about a minute, then reopen the app twice (the first open fetches the update). Raise `VERSION` in `sw.js` with every release.
+
+1. Open the address on the tablet or phone:
    - **Android (Chrome)**: menu ⋮ → *Install app* / *Add to Home screen*.
-   - **iPad (Safari)**: Share → *Add to Home Screen*.
+   - **iPhone / iPad (Safari)**: Share → *Add to Home Screen*.
    - **Windows (Edge/Chrome)**: install icon in the address bar.
-3. Start it from the home screen icon, allow the camera when it asks, and play a test game.
-4. Make a backup under **Settings → Download backup** now and then.
+2. Start it from the home screen icon, allow the camera when it asks, and play a test game.
+3. Make a backup under **Settings → Download backup** now and then.
 
 ## Run it locally on a PC
 
