@@ -98,7 +98,7 @@ export async function render(view) {
               <button class="key fn" data-d="0">${t('Miss')}</button>
               <button class="key fn" data-k="back">⌫</button>
             </div>
-            <button class="key ok" data-k="ok" style="min-height:64px">${darts.length ? t('Enter') : t('No score')}</button>`}
+            <button class="key ok ok-bar" data-k="ok">${darts.length ? t('Enter') : t('No score')}</button>`}
         </div>
       </div>`;
     view.querySelector('.sb-item.active')?.scrollIntoView({ block: 'nearest', inline: 'nearest' });

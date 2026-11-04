@@ -1,5 +1,5 @@
 // Service worker: precaches the whole app, so after the first load it runs fully offline.
-const VERSION = 'kd-v3';
+const VERSION = 'kd-v4';
 const FILES = [
   './',
   'index.html',
